@@ -1,10 +1,3 @@
-const decodeTheRing = function (s, p) {
-
-  
-
-  };
-  
-  module.exports = decodeTheRing;
 
   const decodeTheRing = function (message, pattern) {
     const m = message.length;
