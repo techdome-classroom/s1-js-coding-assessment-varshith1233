@@ -10,11 +10,11 @@ const countIslands = function(grid) {
     // Mark the cell as visited by changing it to 'W'.
     grid[x][y] = 'W';
 
-    // Recursively visit adjacent cells in all four directions.
-    exploreIsland(x + 1, y); // down
-    exploreIsland(x - 1, y); // up
-    exploreIsland(x, y + 1); // right
-    exploreIsland(x, y - 1); // left
+   
+    exploreIsland(x + 1, y); 
+    exploreIsland(x - 1, y); 
+    exploreIsland(x, y + 1); 
+    exploreIsland(x, y - 1); 
   };
 
   // Loop through each cell in the grid grid.
