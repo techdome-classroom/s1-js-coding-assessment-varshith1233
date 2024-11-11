@@ -3,10 +3,8 @@
     const m = message.length;
     const n = pattern.length;
   
-    // DP table with (m+1) rows and (n+1) columns
     const dp = Array.from({ length: m + 1 }, () => Array(n + 1).fill(false));
   
-    // Empty pattern matches an empty message
     dp[0][0] = true;
   
    
