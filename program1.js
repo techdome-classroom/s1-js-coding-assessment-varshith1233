@@ -17,12 +17,12 @@ const countIslands = function(grid) {
     exploreIsland(x, y - 1); 
   };
 
-  // Loop through each cell in the grid grid.
+  
   for (let i = 0; i < grid.length; i++) {
     for (let j = 0; j < grid[0].length; j++) {
-      if (grid[i][j] === 'L') { // Unvisited land cell found
-        islandCount++; // Increment island count for each new island
-        exploreIsland(i, j); // Explore the entire island
+      if (grid[i][j] === 'L') { 
+        islandCount++; 
+        exploreIsland(i, j);
       }
     }
   }
