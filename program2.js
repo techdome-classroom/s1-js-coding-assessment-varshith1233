@@ -21,7 +21,6 @@
         if (pattern[j - 1] === message[i - 1] || pattern[j - 1] === '?') {
           dp[i][j] = dp[i - 1][j - 1];
         } else if (pattern[j - 1] === '*') {
-          // '*' can match an empty sequence or one or more characters
           dp[i][j] = dp[i][j - 1] || dp[i - 1][j];
         }
       }
