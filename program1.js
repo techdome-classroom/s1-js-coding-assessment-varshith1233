@@ -1,4 +1,4 @@
-const countIslands = function(map) {
+const countIslands = function(grid) {
   if (!map || map.length === 0) return 0;
 
   let islandCount = 0;
