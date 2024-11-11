@@ -9,7 +9,7 @@
     // Empty pattern matches an empty message
     dp[0][0] = true;
   
-    // If pattern starts with *, it can match an empty message
+   
     for (let j = 1; j <= n; j++) {
       if (pattern[j - 1] === '*') {
         dp[0][j] = dp[0][j - 1];
