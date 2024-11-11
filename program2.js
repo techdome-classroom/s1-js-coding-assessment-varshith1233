@@ -19,7 +19,6 @@ const decodeTheRing = (message, pattern) => {
   const messageLength = message.length;
   const patternLength = pattern.length;
 
-  // Initialize DP table using helper function
   const dp = initializeDPTable(messageLength, pattern);
 
   // Fill the DP table based on pattern matching rules
