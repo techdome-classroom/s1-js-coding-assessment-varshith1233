@@ -4,10 +4,10 @@ const countIslands = function(grid) {
   let islandCount = 0;
 
   const exploreIsland = (x, y) => {
-    // Base case for recursion: if out of bounds or it's water, stop.
+    
     if (x < 0 || y < 0 || x >= grid.length || y >= grid[0].length || grid[x][y] === 'W') return;
 
-    // Mark the cell as visited by changing it to 'W'.
+  
     grid[x][y] = 'W';
 
    
