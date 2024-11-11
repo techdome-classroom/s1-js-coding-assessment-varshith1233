@@ -21,7 +21,7 @@ const decodeTheRing = (message, pattern) => {
 
   const dp = initializeDPTable(messageLength, pattern);
 
-  // Fill the DP table based on pattern matching rules
+  
   for (let i = 1; i <= messageLength; i++) {
     for (let j = 1; j <= patternLength; j++) {
       if (pattern[j - 1] === message[i - 1] || pattern[j - 1] === '?') {
