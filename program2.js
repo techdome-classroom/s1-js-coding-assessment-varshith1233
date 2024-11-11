@@ -16,11 +16,9 @@
       }
     }
   
-    // Fill the DP table
     for (let i = 1; i <= m; i++) {
       for (let j = 1; j <= n; j++) {
         if (pattern[j - 1] === message[i - 1] || pattern[j - 1] === '?') {
-          // Match a single character or '?'
           dp[i][j] = dp[i - 1][j - 1];
         } else if (pattern[j - 1] === '*') {
           // '*' can match an empty sequence or one or more characters
